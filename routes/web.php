@@ -25,14 +25,3 @@ Route::post('/vision/check-image-success', [VisionController::class, 'checkImage
 
 Route::get('/vision/check-qrcode', [VisionController::class, 'checkQrcode']);
 Route::post('/vision/check-qrcode-success', [VisionController::class, 'checkQrcodePost']);
-
-
-
-
-Route::get('/vision/string', [VisionController::class, 'string']);
-
-Route::get('/vision/qrcode', [VisionController::class, 'qrCode']);
-
-
-
-Route::get('/vision/api-google-image{image}', [VisionController::class, 'apiGooglmage']);
