@@ -25,3 +25,4 @@ Route::post('/vision/check-image-success', [VisionController::class, 'checkImage
 
 Route::get('/vision/check-qrcode', [VisionController::class, 'checkQrcode']);
 Route::post('/vision/check-qrcode-success', [VisionController::class, 'checkQrcodePost']);
+
