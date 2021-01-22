@@ -22,7 +22,7 @@ class VisionController extends Controller
         $imageName = time() . $request->file('image')->getClientOriginalName();
         $request->file('image')->move(public_path('image'), $imageName);
 
-        $vision = new VisionClient(['keyFile' => json_decode(file_get_contents("ocr1-298814-74c855c3608d.json"), true)]);
+        $vision = new VisionClient(['keyFile' => json_decode(file_get_contents(""), true)]);
         $image = fopen(public_path('image') . '/' . $imageName, 'r');
         $image = $vision->image($image, ['WEB_DETECTION', 'FACE_DETECTION', 'TEXT_DETECTION']);
         $result = $vision->annotate($image);
